@@ -3,14 +3,9 @@
 
 using namespace std;
 
-bool visited[101]; // 방문 여부를 체크하는 배열
+bool visited[9]; // 방문 여부를 체크하는 배열
+vector<Edge> graph[9];
 
-class Edge{
-	public:
-		Edge(int s,int e) : snode(s), enode(e) {};
-		int snode;
-		int enode;
-};
 
 // void dfs(int k){
 // 	for(int i = 0; i < G[i].size(); ++i){
@@ -24,16 +19,35 @@ class Edge{
 
 int main(){
 	
-	Edge e1(1,2);
-	Edge e2(2,3);
-	Edge e3(3,4);
-	Edge e4(3,7);
-	Edge e5(3,5);
-	Edge e6(2,6);
-	Edge e7(6,8);
-	Edge e8(1,8);
-	Edge e9(1,9);
+	graph[1].push_back(2);
+	graph[1].push_back(3);
+	graph[1].push_back(8);
 
+	graph[2].push_back(1);
+	graph[2].push_back(7);
+	
+	graph[3].push_back(1);
+	graph[3].push_back(4);
+	graph[3].push_back(5);
+
+	graph[4].push_back(3);
+	graph[4].push_back(5);
+	
+	graph[5].push_back(3);
+	graph[5].push_back(4);
+	
+	graph[6].push_back(7);
+
+	graph[7].push_back(2);
+	graph[7].push_back(6);
+	graph[7].push_back(8);
+	
+	graph[8].push_back(1);
+	graph[8].push_back(7);
+
+
+	dfs(1);
+	
 	//1 2 3 4 5 7 6 8 9
 	cout << "graph" << endl;
 	
