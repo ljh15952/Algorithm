@@ -34,6 +34,7 @@ int main(){
 	Edge e8(1,8);
 	Edge e9(1,9);
 
+	//1 2 3 4 5 7 6 8 9
 	cout << "graph" << endl;
 	
 	return 0;
