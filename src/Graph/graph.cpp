@@ -4,18 +4,17 @@
 using namespace std;
 
 bool visited[9]; // 방문 여부를 체크하는 배열
-vector<Edge> graph[9];
+vector<int> graph[9];
 
-
-// void dfs(int k){
-// 	for(int i = 0; i < G[i].size(); ++i){
-// 		if(!visited[G[K][i].to]){
-// 			visited[G[k][i].to] = true;
-// 			dfs(G[k][i]);
-// 		}
-// 	}
-// 	return;
-// }
+void dfs(int x){
+	visited[x] = true;
+	cout << x << " ";
+	for(int i = 0; i < graph[x].size(); ++i){
+		int y = graph[x][i];
+		if(!visited[y])
+			dfs(y);
+	}
+}
 
 int main(){
 	
@@ -47,7 +46,7 @@ int main(){
 
 
 	dfs(1);
-	https://better-tomorrow.tistory.com/entry/DFS-BFS-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0
+	
 	//1 2 3 4 5 7 6 8 9
 	cout << "graph" << endl;
 	
