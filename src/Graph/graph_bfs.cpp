@@ -9,21 +9,20 @@ bool visited[9];
 
 void bfs(int k){
 	queue<int> q;
-	q.push(k); //첫 노드 queue에 삽입
+	q.push(k);
 	visited[k] = true;
 	
-	//큐가 빌 때까지 반복
 	while(!q.empty()){
-		//큐에서 하나의 원소를 뽑아 출력
-		int x = q.front();
+		int n = q.front();
 		q.pop();
-		cout << x << ' ';
+		cout << n << ' ';
 		
-		for(int i = 0; i < graph[x].size(); ++i){
-			int now = graph[x][i];
+		for(int i = 0; i < graph[n].size(); ++i){
+			int now = graph[n][i];
+			
 			if(visited[now] == false){
 				q.push(now);
-				visited[now] = true;				
+				visited[now] = true;
 			}
 		}
 		
