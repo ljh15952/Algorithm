@@ -1,0 +1,16 @@
+그래프의 일종 
+트리에서의 정점을 특별히 "노드"라고 한다.
+간선은 특별히 "가지"라고한다.
+
+코드
+struct Node;
+
+struct List{
+	struct List *next;
+	struct Node *element;
+};
+
+struct Node{
+	struct Node * Parent;
+	struct List * Chlidren;
+}
