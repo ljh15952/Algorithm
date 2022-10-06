@@ -13,7 +13,7 @@ struct List{
 struct Node{
 	struct Node * Parent;
 	struct List * Chlidren;
-}
+};
 
 트리 관련 용어
 노드 Node 그랲의 정점에 해당하는 것
