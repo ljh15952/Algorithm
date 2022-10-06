@@ -21,3 +21,5 @@ int main(){
 	
 	return 0;
 }
+// next study
+//https://velog.io/@kon6443/Data-Structure-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-C-%ED%8A%B8%EB%A6%AC
