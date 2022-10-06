@@ -16,7 +16,8 @@ struct Node{
 
 int main(){
 	
-	cout << "TREE?" << endl;
+	Node * root;
+	
 	
 	return 0;
 }
