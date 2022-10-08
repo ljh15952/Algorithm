@@ -1,29 +1,61 @@
 #include <iostream>
-#include <vector>
+#include <queue>
 
 using namespace std;
 
-class Node{
-	public:
-		Node(int v) : value(v) {};
-		Node * parent;
-		vector<Node*> children;
-	
-		int value;	
-	
-		void addChild(Node * n){
-			children.push_back(n);
-		}
+struct Node{
+	int data;
+	Node * left;
+	Node * right;
 };
+
+Node * CreateNode(int data){
+	Node * newNode = new Node();
+	newNode->data = data;
+	newNode->left = newNode->right = NULL;
+	return newNode;
+}
+
+Node * InsertNode(Node * root, int data){
+	if(root == nullptr){
+		root = CreateNode(data);
+		return root;
+	}
+	
+	queue<Node*> q;
+	q.push(root);
+	
+	while(!q.empty()){
+		Node * temp = q.front();
+		q.pop();
+		
+		if(temp->left != nullptr)
+			q.push(temp->left);
+		else{
+			temp->left = CreateNode(data);
+			return root;
+		}
+		
+		if(temp->right != nullptr)
+			q.push(temp->right);
+		else{
+			temp->right = CreateNode(data);
+			return root;
+		}
+	}
+}
 
 int main(){
 	
-	Node * one = new Node(1);
+	Node * root = new Node(1);
 	
-	Node * two = new Node(2);
-	two->parent = one;
+	root->left = new Node(2);
+	root->right = new Node(3);
 	
-	one->addChild(two);
+	root->left->left = new Node(4);
+	
+	
+	
 	
 	return 0;
 }
