@@ -8,3 +8,5 @@ https://librewiki.net/wiki/%EC%8B%9C%EB%A6%AC%EC%A6%88:%EC%88%98%ED%95%99%EC%9D%
 
 # 잠깐 링크 저장
 https://m.blog.naver.com/PostView.naver?blogId=syette828&logNo=221102414459&navType=by
+조엘 스폴스키 블로그
+https://www.joelonsoftware.com/
