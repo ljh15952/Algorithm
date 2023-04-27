@@ -1,6 +1,7 @@
 # Algorithm
 Just for study
-
+# Study
+https://ko.khanacademy.org/
 # Geeksforgeeks
 https://www.geeksforgeeks.org/introduction-to-algorithms/?ref=lbp
 # LibreWiki
