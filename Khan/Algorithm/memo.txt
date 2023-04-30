@@ -11,4 +11,7 @@ algorithm (noun) : a set of steps to accomplish as task
 유형이 팩맨에 가장 빨리 다다를 수 있는 경로는 무엇일까?
 텍사스 달라스에서 플로리다 올랜도까지 차로 가는 가장 빠른 길은 무엇일까?
 
-미로 탐색 BFS?
+미로 탐색
+
+이진 탐색
+
