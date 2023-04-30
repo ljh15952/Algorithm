@@ -1,1 +1,14 @@
 What is an algorithm?
+algorithm (noun) : a set of steps to accomplish as task
+					어떤 문제를 해결하기 위한 절차의 집합
+					
+어떤 문제를 해결하기 위해 필요한 명령어들의 집합
+1. Correctness 해결할 수 있는
+2. Efficiency 효과적인
+
+1963년 윌리엄 메리 대학을 세운 윌리엄 왕 3세와
+현 윌리엄 왕자의 관계는 어떻게 될까?
+유형이 팩맨에 가장 빨리 다다를 수 있는 경로는 무엇일까?
+텍사스 달라스에서 플로리다 올랜도까지 차로 가는 가장 빠른 길은 무엇일까?
+
+미로 탐색 BFS?
