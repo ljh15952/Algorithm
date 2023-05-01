@@ -14,4 +14,5 @@ algorithm (noun) : a set of steps to accomplish as task
 미로 탐색
 
 이진 탐색
-
+정렬되어 있는게 중요
+(low + high) / 2
