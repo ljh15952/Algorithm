@@ -15,4 +15,9 @@ algorithm (noun) : a set of steps to accomplish as task
 
 이진 탐색
 정렬되어 있는게 중요
-(low + high) / 2
+(min + max) / 2
+1. min = 1, max = n으로 초기화
+2. max와 min의 평균을 구하되, 정수가 되도록 내림(반올림x)
+3. 추측이 맞으면 끝
+4. 추측값이 너무 작으면 min을 추측값보다 1크게 설정
+5. 추측값이 너무 크면 max를 1작게 설정
