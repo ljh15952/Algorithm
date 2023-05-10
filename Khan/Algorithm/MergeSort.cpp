@@ -1,24 +1,34 @@
 #include <iostream>
-#include <array>
 
 using namespace std;
 
-int arr[100];
+int arr[100] = {5,4,3,2,1,0,-1};
 int result[100];
 
 void merge(int p, int q, int r){
 	
-	int i = 0;
-	int j = 0;
+	int i = p;
+	int j = q+1;
 	int k = p;
 	
 	while(i <= q && j <= r){
-		if(arr[i++] < arr[j++]){
-			result[k] = arr[i];
+		if(arr[i] < arr[j]){
+			result[k++] = arr[i++];
 		}else{
 			result[k++] = arr[j++];
 		}
 	}
+	
+	while(i <= q)
+	    result[k++] = arr[i++];
+	    
+    while(j <= r)
+	    result[k++] = arr[j++];
+	    
+	for(i = p; i <= r; ++i){
+	    arr[i] = result[i];
+	}
+	
 }
 
 void mergeSort(int p, int r){
@@ -32,12 +42,12 @@ void mergeSort(int p, int r){
 
 int main(){
 	
-	arr = {5,4,3,2,1,0,-1};
+	
 	
 	mergeSort(0, 7-1);
 	
 	for(int i = 0; i < 7; ++i){
-		cout << result[i] << ' ';
+		cout << arr[i] << ' ';
 	}
 	
 	cout << endl;

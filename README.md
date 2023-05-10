@@ -14,4 +14,4 @@ https://www.joelonsoftware.com/
 https://www.joelonsoftware.com/2000/03/23/command-and-conquer-and-the-herd-of-coconuts/
 
 # 일본어
-https://www3.nhk.or.jp/news/
+(https://www3.nhk.or.jp/news/easy/index.html)
