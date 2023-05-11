@@ -1,0 +1,16 @@
+그래프(graph)
+변(edge)
+정점(vectex)
+(u,v)
+양방향 관계, 방향성이 없다.(undirected)->(u,v)=(v,u)
+->반대 방향 그래프(directed graphs)
+정점을 연결하는 변의 수는 정점의 차수(degree)
+
+가중치(weight)
+가중치가 있는 변이 있는 그래프 -> 가중 그래프(weight graph)
+가중 그래프에서 최단경로를 알고 싶으면 두 정점 간의 모든 경로에서
+변의 가중치 합이 최소가 되는 경로를 찾는다.
+
+방향성 비순환 그래프(directed acyclic graph) -> dag
+
+정점 집합 V, 변 집합 E로 묶어서 집합으로 생각하는 것이 좋음
